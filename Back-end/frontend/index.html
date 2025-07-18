@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Commodity Price Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Live Commodity Tracker</h1>
+    <button id="menu-btn">☰</button>
+  </header>
+
+  <main>
+    <section class="filter">
+      <label for="city">Pilih Kota/Kabupaten:</label>
+      <select id="city">
+        <option value="semarang">Semarang</option>
+        <option value="surabaya">Surabaya</option>
+        <option value="jakarta">Jakarta</option>
+      </select>
+    </section>
+
+    <section class="price-list">
+      <h2>Harga Terkini</h2>
+      <ul id="price-data">
+        <!-- Data akan di-inject JS -->
+      </ul>
+    </section>
+
+    <section class="chart">
+      <h2>Grafik Tren Harga</h2>
+      <canvas id="priceChart"></canvas>
+    </section>
+
+    <section class="downloads">
+      <button id="download-pdf">Unduh PDF</button>
+      <button id="download-csv">Unduh CSV</button>
+    </section>
+
+    <!-- Tambahkan ini -->
+    <section id="all-cities">
+      <!-- Data seluruh kota akan muncul di sini lewat JS -->
+    </section>
+    <!-- end penambahan -->
+
+  </main>
+
+  <footer>
+    © 2025 LiveTracker
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
